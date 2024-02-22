@@ -1,4 +1,4 @@
-const btn = document.querySelector(".btn-submit")
+const btn = document.querySelector(".rgb-btn")
 
 const alert_array = ["Don't eat that!"]
 

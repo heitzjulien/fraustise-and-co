@@ -110,4 +110,19 @@ body {
         left: 0;
         top: 0;
         border-radius: 10px;
-    }    
+    }
+
+    .checkbox-container {
+        display: flex;
+        flex-direction: row-reverse;
+
+        label {
+            flex: auto 1 0;
+        }
+
+        input {
+            flex: auto 0 1;
+        }
+    }
+
+
