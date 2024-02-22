@@ -12,7 +12,7 @@ function createReflexButton() {
     if (btn) {
         btn.addEventListener("click", () => {
             btn.remove();
-            createButton();
+            createReflexButton();
         })
     }
 }
