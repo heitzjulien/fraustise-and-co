@@ -14,14 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
             timeInSeconds--;
             updateTimerDisplay(timeInSeconds);
         } else {
-            const bobody = document.querySelector(".bobody")
-            const body = document.querySelector("body")
-            bobody.remove()
-            const title = document.createElement("h1")
-            const ciao = document.createTextNode("C'est ciao")
-            title.appendChild(ciao)
-            title.style.textAlign = "center"
-            body.appendChild(title)
+            let loc = "/poc/firework.html"
+            window.location.href = loc
         }
     }
     const timerInterval = setInterval(updateTimer, 1000);
