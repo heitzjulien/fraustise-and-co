@@ -10,6 +10,7 @@ function createReflexButton() {
     reflexDiv.innerHTML = `<button class="btn-reflex" style="all: unset; cursor: pointer; position: absolute; top: ${top}px; left: ${left}px;"><div style="border-radius: 1000px; background: ${color}; width: ${size}px; height: ${size}px;"></div></button>`
     const btn = document.querySelector(".btn-reflex");
 
+
     if (btn) {
         btn.addEventListener("click", () => {
             btn.remove();
@@ -21,7 +22,15 @@ function createReflexButton() {
                 btn.remove();
                 missedClicks++;
                 if (missedClicks === 3) {
-                    console.log("The End")
+                    const bobody = document.querySelector(".bobody")
+                    const body = document.querySelector("body")
+                    bobody.remove()
+                    const p = document.createElement("p")
+                    const ciao = document.createTextNode("C'est ciao")
+                    p.appendChild(ciao)
+                    p.style.textAlign = "center"
+                    body.appendChild(p)
+
                     clearInterval(interval)
                 }
             }
@@ -29,4 +38,4 @@ function createReflexButton() {
     }
 }
 createReflexButton();
-interval = setInterval(createReflexButton, 15000);
+interval = setInterval(createReflexButton, 10000);

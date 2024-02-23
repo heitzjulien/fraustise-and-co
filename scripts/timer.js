@@ -14,7 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
             timeInSeconds--;
             updateTimerDisplay(timeInSeconds);
         } else {
-            console.log("Timer finished!");
+            const bobody = document.querySelector(".bobody")
+            const body = document.querySelector("body")
+            bobody.remove()
+            const p = document.createElement("p")
+            const ciao = document.createTextNode("C'est ciao")
+            p.appendChild(ciao)
+            p.style.textAlign = "center"
+            body.appendChild(p)
         }
     }
     const timerInterval = setInterval(updateTimer, 1000);

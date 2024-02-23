@@ -144,7 +144,7 @@ body {
 .rotating {
     animation: rotate 2s linear infinite;
     position: absolute;
-    top: 20px;
+    top: 50px;
     border-radius: 20px;
     background: lightgreen;
 }
