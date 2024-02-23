@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const bobody = document.querySelector(".bobody")
             const body = document.querySelector("body")
             bobody.remove()
-            const p = document.createElement("p")
+            const title = document.createElement("h1")
             const ciao = document.createTextNode("C'est ciao")
-            p.appendChild(ciao)
-            p.style.textAlign = "center"
-            body.appendChild(p)
+            title.appendChild(ciao)
+            title.style.textAlign = "center"
+            body.appendChild(title)
         }
     }
     const timerInterval = setInterval(updateTimer, 1000);
