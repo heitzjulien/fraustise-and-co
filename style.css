@@ -120,6 +120,7 @@ body {
     .checkbox-container {
         display: flex;
         flex-direction: row-reverse;
+        gap: 15px;
 
         label {
             flex: auto 1 0;
@@ -127,6 +128,7 @@ body {
 
         input {
             flex: auto 0 1;
+            width: fit-content;
         }
     }
 
